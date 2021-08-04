@@ -1,29 +1,14 @@
-# Application Name
+# BC Gender Results Framework App
 
-## What am I?
+[![Lifecycle:Experimental](https://img.shields.io/badge/Lifecycle-Experimental-339999)](<Redirect-URL>)
 
-I am a template repo for use by the platform services team to encourage consistency in documentation and repo layout. For those using me, do not feel like you are *required* to adhere to this layout if you feel something better would suit the needs of your application or service. Find more information about this template [here](https://github.com/bcgov-c/platform-services-docs/blob/main/repo-organization.md)
+## About
 
-**Sadly, topics are not automatically imported when creating a repository from a template. Ensure you include the following topics:**
-- `citz`
-- `devops`
-- `platform-services`
-- `supported` / `unsupported`
-- plus any additional topics that may be appropriate
+The Gender Results Framework represents the Government of Canada’s vision for gender equality, highlighting the key issues that matter most.  Under this framework, the federal government has identified six key areas where change is required to advance gender equality. {r} [More information is available] (https://women-gender-equality.canada.ca/en/gender-results-framework.html) on the Government of Canada's website.
 
-Please use this README as a template for your own README, including all the same information, as appropriate.
-
-Consider including your namespace name(s) in this section, so others supporting this tool know where to look.
-
-## Contact Info
-
-Relevant rocketchat channels, maybe some outside docs, vendor support portals, etc.
-
-## Vendor Info
-
-If this is a deployment of a vendored product, include some links to relevant repos and documentation.
+This shiny app is a proof of concept to support access to available B.C. data for the Gender Results Framework indicators. 
 
 ## Repo Overview
 
-Tell me where to find important stuff in this repo and provide some info about the layout.
+TBD
 
