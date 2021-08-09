@@ -90,6 +90,7 @@ ui <- function(req) {
                                           HTML("Note that this site is in development, watch for changes."),
                                           br(), br()),
                                         fluidRow(#div(style = "width: 80%; margin:0 auto",
+                                          div(style = "width: 65%",
                                           column(width = 4,
                                                  tags$button(
                                                    id = "ed_button",
@@ -137,7 +138,7 @@ ui <- function(req) {
                                                    style = "width: 100%",
                                                    tags$img(src = "world.png",
                                                             style = "width: 100%")
-                                                   ))),#)
+                                                   )))),
                                  br(),br()
                                         ),
                        tabPanel(value = "ed",
