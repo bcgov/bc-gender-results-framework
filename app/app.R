@@ -61,7 +61,7 @@ ui <- function(req) {
                                         br(),br(),
                                         "Questions?",
                                         br(),br(),
-                                        "Contact", tags$a("Brooke Somers,", href = 'Brooke.Somers@gov.bc.ca'),
+                                        "Contact", tags$a("Brooke Somers,", href = 'mailto:Brooke.Somers@gov.bc.ca?Subject=gender-results-framework'),
                                         br(), 
                                         "BC Stats",
                                         br(),
