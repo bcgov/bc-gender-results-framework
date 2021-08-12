@@ -13,11 +13,15 @@ library(janitor)
 library(cansim)
 library(shinyWidgets)
 library(shinydashboard)
+library(qs)
 
-## chart theme/functions ----
+## data ----
+cansim_data <<- qread("data/data.qs")
+
+## chart theme/charts ----
 source("scripts/chart_theme.R")
-source("scripts/functions.R")
-source("scripts/charts/charts_ed.R")
+source("scripts/charts.R")
+
 
 # UI demonstrating column layouts
 ui <- function(req) {
@@ -242,6 +246,19 @@ server <- function(input, output, session) {
   output$ed_1_1_1 <- renderPlot(chart_ed_1_1_1)
   output$ed_1_1_3 <- renderPlot(chart_ed_1_1_3)
   output$ed_1_3_1 <- renderPlot(chart_ed_1_3_1)
+  output$econ_2_1_1 <- renderPlot(chart_econ_2_1_1)
+  output$econ_2_2_1 <- renderPlot(chart_econ_2_2_1)
+  output$econ_2_3_1 <- renderPlot(chart_econ_2_3_1)
+  output$econ_2_4_1 <- renderPlot(chart_econ_2_4_1)
+  output$econ_2_5_1 <- renderPlot(chart_econ_2_5_1)
+  output$lead_3_1_1 <- renderPlot(chart_lead_3_1_1)
+  output$lead_3_2_1 <- renderPlot(chart_lead_3_2_1)
+  output$just_4_2_1 <- renderPlot(chart_just_4_2_1)
+  output$just_4_3_1 <- renderPlot(chart_just_4_3_1)
+  output$just_4_6_1 <- renderPlot(chart_just_4_6_1)
+  output$pov_5_2_1 <- renderPlot(chart_pov_5_2_1)
+  output$pov_5_3_1 <- renderPlot(chart_pov_5_3_1)
+  output$pov_5_5_1 <- renderPlot(chart_pov_5_5_1)
 
  
 

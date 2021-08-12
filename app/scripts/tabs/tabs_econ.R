@@ -27,7 +27,10 @@ tags$fieldset(
                       #### Indicator 2.1.1 ----
                       "2.1.1 ", 
                       tags$a("Labour force participation rate", href = "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410032702"),
-                      br(),br(),
+                      tags$ul(
+                        tags$li("The participation rate is the number of labour force participants expressed as a percentage of the population 15 years of age and over."), 
+                        tags$li("The participation rate for females in BC is 59.4% compared to 68.0% for males. In Canada the participation rate is 59.6% for females and 68.7% for males."), 
+                        ),
                       "2.1.1 Other Relevant BC Data: ",
                       tags$a("BC Economic Recovery Indicators", href = "https://bcstats.shinyapps.io/Economic-Indicators/"),
                       " - Participation Rate (Chart)",
@@ -36,11 +39,16 @@ tags$fieldset(
                       #### Indicator 2.1.2 ----
                       "2.1.2 ", 
                       tags$a("Employment rate", href = "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410032702"),
-                      br(),br(),
+                      tags$ul(
+                        tags$li("The employment rate is the number of persons employed expressed as a percentage of the population 15 years of age and over."), 
+                        tags$li("The employment rate for females in BC is 54.1% compared to 61.9% for males. In Canada the employment rate is 53.9% for females and 62.1% for males.") 
+                      ),
                       "2.1.2 Other Relevant BC Data: ",
                       tags$a("BC Economic Recovery Indicators", href = "https://bcstats.shinyapps.io/Economic-Indicators/"), 
                       " - Employment by Sex (Chart), Unemployment Rate (Chart), Employment Insurance Beneficiaries by Sex (Chart)",
-                      br(), br()
+                      br(),br(),
+                      tags$div(style = "margin-left:20px; margin-bottom:20px",
+                               plotOutput("econ_2_1_1", width = "100%"))
                       ),
   
   ### Indicator 2.2 ----
@@ -52,12 +60,23 @@ tags$fieldset(
                       #### Indicator 2.2.1 ----
                       "2.2.1 ", 
                       tags$a("Gender gap in median hourly wages", href = "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410034002&pickMembers%5b0%5d=1.11&pickMembers%5b1%5d=3.1&pickMembers%5b2%5d=5.3&pickMembers%5b3%5d=6.1&cubeTimeFrame.startYear=2016&cubeTimeFrame.endYear=2020&referencePeriods=20160101%2c20200101"), 
-                      br(),br(),
+                      tags$ul(
+                        tags$li("In 2020, the median hourly wage for females 15 years and over was $24.23, compared to the median wage for males of $29.49."), 
+                        tags$li("Occupations in educations, law and social, community and goverment services saw the highest gender (median) wage gap in 2020 with a difference of $10.60."), 
+                        tags$li("Historically, occupations in the natural resource sector had the highest wage gaps, however the gap dramatically decreased from 2019 ($9.24) to 2020 ($4.97)"),
+                        tags$li("Health occupations and sales and service occupations have the smallest wage gap.")
+                      ),
+                      tags$div(style = "margin-left:20px; margin-bottom:20px",
+                               plotOutput("econ_2_2_1", width = "1000px")),
                       
                       #### Indicator 2.2.2 ----
                       "2.2.2 ",
                       tags$a("Gender gap in average hourly wages", href = "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410034002&pickMembers%5b0%5d=1.11&pickMembers%5b1%5d=3.1&pickMembers%5b2%5d=5.3&pickMembers%5b3%5d=6.1&cubeTimeFrame.startYear=2016&cubeTimeFrame.endYear=2020&referencePeriods=20160101%2c20200101"),
-                      br(),br(),
+                      tags$ul(
+                        tags$li("In 2020, the average hourly wage for females 15 years and over was $27.49, compared to the average wage for males of $31.99."), 
+                        tags$li("Similar to difference in median wages, occupations in educations, law and social, community and goverment services saw the highest gender (average) wage gap in 2020 with a difference of $7.32."), 
+                        tags$li("Health occupations and sales and service occupations have the smallest avearge wage gap as well.")
+                      ),
                       "2.2.2 Other Relevant BC Data: ",
                       tags$a("BC Economic Recovery Indicators", href = "https://bcstats.shinyapps.io/Economic-Indicators/"),
                       " - Average Hourly Wage Earnings (Chart)",
@@ -83,7 +102,12 @@ tags$fieldset(
                       #### Indicator 2.3.1 ----
                       "2.3.1 ",
                       tags$a("Proportion of workers in full-time jobs", href = "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410032703"),
-                      br(), br()
+                      tags$ul(
+                        tags$li("The proportion of persons employed full/part-time is the number of persons employed in full/part-time jobs expressed as a proportion of total employment."), 
+                        tags$li("71.4% of employed females are employed full-time compared to 85.8% of males. In Canada, the same is true for 75.6% of employed females and 87.7% of employed males."), 
+                       ),
+                      tags$div(style = "margin-left:20px; margin-bottom:20px",
+                               plotOutput("econ_2_3_1", width = "100%"))
                       ),
   
   ### Indicator 2.4 ----
@@ -95,7 +119,8 @@ tags$fieldset(
                       #### Indicator 2.4.1 ----
                       "2.4.1 ",
                       tags$a("Proportion of time spent on unpaid domestic and care work", href = "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=4510001402"),
-                      br(),br(),
+                      tags$div(style = "margin-left:20px; margin-bottom:20px",
+                               plotOutput("econ_2_4_1", width = "100%")),
                       
                       #### Indicator 2.4.2 ----
                       "2.4.2 ",
@@ -129,7 +154,8 @@ tags$fieldset(
                       #### Indicator 2.5.1 ----
                       "2.5.1 ", 
                       tags$a("Proportion of occupational group who are women", href = "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410033502"),
-                      br(),br(),
+                      tags$div(style = "margin-left:20px; margin-bottom:20px",
+                               plotOutput("econ_2_5_1", width = "100%")),
                       "2.5.1 Other Relevant BC Data: ",
                       tags$a("Workforce Profiles Report", href = "https://securesurveys.gov.bc.ca/ERAP/workforce-profiles/#/?Des_Grp=IND&Des_Grp=DIS&Des_Grp=VM&Des_Grp=WOM&Employee_Type=ALL&Ministry_Key=BCPS&Year=2020"),
                       " (Statistics on the representation of designated equity groups across the BC Public Service (BCPS) workforce, 

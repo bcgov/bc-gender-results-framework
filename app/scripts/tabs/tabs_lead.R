@@ -26,7 +26,8 @@ tags$fieldset(
                       #### Indicator 3.1.1 ----
                       "3.1.1 ", 
                       tags$a("Proportion of employees in management positions who are women, by management level", href = "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410033503"),
-                      br(),br(),
+                      tags$div(style = "margin-left:20px; margin-bottom:20px",
+                               plotOutput("lead_3_1_1", width = "100%"))
                       ),
   
   ### Indicator 3.2 ----
@@ -39,7 +40,8 @@ tags$fieldset(
                       "3.2.1 ", 
                       tags$a("Proportion of businesses majority-owned by women, by business size", href = "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3310019101"),
                       "[", tags$a("Additional Canada Data (By Age)", href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3310019201"), "]",
-                      br(),br(),
+                      tags$div(style = "margin-left:20px; margin-bottom:20px",
+                               plotOutput("lead_3_2_1", width = "100%")),
                       "3.2.1 Other Relevant BC Data: ",
                       tags$a("Small Business Statistics", href="https://www2.gov.bc.ca/gov/content/data/statistics/business-industry-trade/small-business"),
                       " (Data and analysis related to small businesses in BC) - ",

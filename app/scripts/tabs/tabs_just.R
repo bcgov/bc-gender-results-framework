@@ -46,7 +46,8 @@ tags$fieldset(
                       #### Indicator 4.2.2 ----
                       "4.2.2 ", 
                       tags$a("Proportion of population who self-reported being sexually assaulted, since age 15", href = "https://www150.statcan.gc.ca/t1/tbl1/en/cv%21recreate.action?pid=3510016601&selectedNodeIds=1D11%2c4D1%2c4D2&checkedLevels=0D1%2c1D1%2c1D2%2c1D3%2c2D2&refPeriods=20180101%2c20180101&dimensionLayouts=layout2%2clayout3%2clayout2%2clayout2%2clayout2&vectorDisplay=false"),
-                      br(),br()
+                      tags$div(style = "margin-left:20px; margin-bottom:20px",
+                               plotOutput("just_4_2_1", width = "100%"))
                       ),
   
   ### Indicator 4.3 ----
@@ -58,7 +59,8 @@ tags$fieldset(
                       #### Indicator 4.3.1 ----
                       "4.3.1 ", 
                       tags$a("Proportion of population who self-reported childhood maltreatment (before age 15), by type of maltreatment", href = "https://www150.statcan.gc.ca/t1/tbl1/en/cv%21recreate.action?pid=3510016701&selectedNodeIds=1D11%2c5D1%2c5D2&checkedLevels=0D1%2c1D1%2c2D1%2c2D2%2c2D3%2c3D2&refPeriods=20180101%2c20180101&dimensionLayouts=layout2%2clayout2%2clayout3%2clayout2%2clayout2%2clayout2&vectorDisplay=false"),
-                      br(),br(),
+                      tags$div(style = "margin-left:20px; margin-bottom:20px",
+                               plotOutput("just_4_3_1", width = "100%")),
                       "4.3.1 Other Relevant BC Data: ",
                       tags$a("Ministry of Children and Family Development Reporting Portal", href = "https://mcfd.gov.bc.ca/reporting/services"),
                       " (Data and trends for six service lines) - ",
@@ -98,7 +100,8 @@ tags$fieldset(
                       #### Indicator 4.6.1 ----
                       "4.6.1 ", 
                       tags$a("Proportion of Indigenous women and girls subjected to physical, sexual or psychological violence, by Indigenous identity", href = "https://www150.statcan.gc.ca/t1/tbl1/en/cv%21recreate.action?pid=3510016801&selectedNodeIds=1D11%2c5D1%2c5D2&checkedLevels=0D1%2c1D1%2c2D1%2c2D2%2c2D3%2c3D2&refPeriods=20180101%2c20180101&dimensionLayouts=layout2%2clayout2%2clayout3%2clayout2%2clayout2%2clayout2&vectorDisplay=false"),
-                      br(),br()
+                      tags$div(style = "margin-left:20px; margin-bottom:20px",
+                               plotOutput("just_4_6_1", width = "100%"))
                       ),
   
   

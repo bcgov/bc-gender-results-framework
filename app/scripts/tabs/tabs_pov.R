@@ -41,7 +41,8 @@ tags$fieldset(
                       #### Indicator 5.2.1 ----
                       "5.2.1 ", 
                       tags$a("Proportion of individuals living in households that are moderately or severely food-insecure, by economic family type", href = "https://www150.statcan.gc.ca/t1/tbl1/en/cv%21recreate.action?pid=1310038501&selectedNodeIds=1D11%2c3D1%2c3D5%2c4D4&checkedLevels=0D1%2c1D1%2c1D2%2c2D2&refPeriods=20170101%2c20170101&dimensionLayouts=layout2%2clayout3%2clayout2%2clayout2%2clayout2&vectorDisplay=false"),
-                      br(),br()
+                      tags$div(style = "margin-left:20px; margin-bottom:20px",
+                               plotOutput("pov_5_2_1", width = "100%"))
                       ),
   
   ### Indicator 5.3 ----
@@ -53,7 +54,8 @@ tags$fieldset(
                       #### Indicator 5.3.1 ----
                       "5.3.1 ", 
                       tags$a("Proportion of the population in core housing need, by economic family type", href = "https://www150.statcan.gc.ca/t1/tbl1/en/cv%21recreate.action?pid=3910005001&selectedNodeIds=1D13%2c2D6&checkedLevels=0D1%2c2D1%2c3D1%2c3D2%2c4D1%2c4D2%2c4D3%2c4D4&refPeriods=20060101%2c20160101&dimensionLayouts=layout2%2clayout2%2clayout2%2clayout2%2clayout3%2clayout2&vectorDisplay=false"),
-                      br(),br(),
+                      tags$div(style = "margin-left:20px; margin-bottom:20px",
+                               plotOutput("pov_5_3_1", width = "100%")),
                       "5.3.1 Other Relevant BC Data: ",
                       tags$a("BC Housing Research Centre", href = "https://www.bchousing.org/research-centre"),
                       " (Includes ", tags$a("Housing Data", href = "https://www.bchousing.org/research-centre/housing-data"),
@@ -87,7 +89,8 @@ tags$fieldset(
                       #### Indicator 5.5.1 ----
                       "5.5.1 ", 
                       tags$a("Leading causes of death", href = "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310080002"),
-                      br(),br(),
+                      tags$div(style = "margin-left:20px; margin-bottom:20px",
+                               plotOutput("pov_5_5_1", width = "100%")),
                       
                       #### Indicator 5.5.2 ----
                       "5.5.2 ",
