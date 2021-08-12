@@ -70,12 +70,13 @@ cleveland_chart_duo <- function(p, data, shape, yaxis, label){
   
  p +
    labs(shape = NULL, colour = NULL) +
-    geom_point(aes(shape = {{shape}}, colour = {{shape}}),size = 4) +
-    geom_line( aes(group={{yaxis}})) +
-    geom_text(data = right_label, aes(label = {{label}}, colour = {{shape}}), hjust = -1) +
-    geom_text(data = left_label, aes(label = {{label}}, colour = {{shape}}), hjust = 2) +
-    scale_x_continuous(limits = c(-3,max(data$value)+7), expand = c(0,0)) +
-    bcstats_chart_theme 
+   geom_point(aes(shape = {{shape}}, colour = {{shape}}),size = 4) +
+   geom_line( aes(group={{yaxis}})) +
+   geom_text(data = right_label, aes(label = {{label}}, colour = {{shape}}), hjust = -1) +
+   geom_text(data = left_label, aes(label = {{label}}, colour = {{shape}}), hjust = 2) +
+   scale_x_continuous(limits = c(-3,max(data$value)+7), expand = c(0,0)) +
+   bcstats_chart_theme +
+   scale_color_manual(values = c("#333333", "#989898") )
 } 
 
 
@@ -101,5 +102,6 @@ cleveland_chart_duo_facet <- function(p, data, shape, yaxis, facet, label){
     geom_text(data = right_label, aes(label = {{label}}, colour = {{shape}}), hjust = -1) +
     geom_text(data = left_label, aes(label = {{label}}, colour = {{shape}}), hjust = 2) +
     scale_x_continuous(limits = c(-3,max(data$value)+7), expand = c(0,0)) +
-    bcstats_chart_theme 
+    bcstats_chart_theme +
+    scale_color_manual(values = c("#333333", "#989898") )
 } 
