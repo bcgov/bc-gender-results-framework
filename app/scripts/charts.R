@@ -177,16 +177,15 @@ chart_just_4_6_1 <- (ggplot(cansim_data$just_4_6_1, aes(x = value, y = indigenou
 
 ## pov_5_2_1 ----
 
-chart_pov_5_2_1 <- (ggplot(cansim_data$pov_5_2_1 %>% filter(household_food_security_status %in% c("Food insecure, severe", "Food insecure, moderate and severe")), 
+chart_pov_5_2_1 <- (ggplot(cansim_data$pov_5_2_1, 
                            aes(x = living_arrangement, y = value, 
                                label=paste0(value, "%"), fill = household_food_security_status)) + 
   labs (y = "Percent food security level",
         x = NULL,
         title = "Proportion of food security level by economic family type (%)",
-        subtitle = "(Severe food insecurity)",
         caption = "Source: Statistics Canada table 13-10-0385-01\nReference date: 2017/18; Frequency: Occasional",
         fill = NULL)) %>%
-  prop_bar_chart(colour = rep(c("white", "black"),8))
+  prop_bar_chart(colour = c(rep(c("white", "white", "black"),6), "white", "black", "white", "white", "black"))
 
 ## pov_5_3_1 ----
 
