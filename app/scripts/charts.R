@@ -58,19 +58,19 @@ chart_econ_2_1_1 <- (ggplot(cansim_data$econ_2_1_1, aes(x = value, y = labour_fo
 
 ## econ_2_2_1 ----
 ## Come back to this chart - 10 line charts with occupation as facets?
-chart_econ_2_2_1 <- (ggplot(cansim_data$econ_2_2_1 %>% filter(national_occupational_classification_noc %in% 
-                                                     (cansim_data$econ_2_2_1$national_occupational_classification_noc %>%
-                                                     unique() %>%
-                                                     head(5))), 
-                             aes(x = ref_date, y = diff, colour = national_occupational_classification_noc)) +
+chart_econ_2_2_1 <- ggplot(cansim_data$econ_2_2_1 %>% filter(ref_date > ymd("2015-01-01")), aes(x = ref_date, y = diff)) +
   labs(x = NULL,
        y = "Male - female wages ($)", 
        title = "Difference in median hourly wage between genders ($)",
-       subtitle = "Top 5 occupations with biggest wage gap",
-       caption = "Source: Statistics Canada table 37-10-0047-01\nReference date: 2020; Frequency: Annual",
-       colour = "National Occupational Classification (NOC)",
-       shape = "National Occupational Classification (NOC)")) %>%
-  line_chart(shape = national_occupational_classification_noc)
+       caption = "Source: Statistics Canada table 37-10-0047-01\nReference date: 2020; Frequency: Annual") +
+  facet_wrap(facets = vars(national_occupational_classification_noc), ncol = 2) +
+  geom_line() +
+  geom_point(size = 4) +
+  geom_text(aes(label = paste0("$",format(round_half_up(diff, digits = 1), nsmall = 2)), vjust = 2)) +
+  scale_x_date(date_labels = "%Y", date_breaks = "1 year" ) +
+  bcstats_chart_theme +
+  scale_color_grey() +
+  scale_y_continuous(limits = c(-5,15))
   
 
 ## econ_2_3_1 ----

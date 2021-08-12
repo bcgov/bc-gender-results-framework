@@ -67,7 +67,7 @@ tags$fieldset(
                         tags$li("Health occupations and sales and service occupations have the smallest wage gap.")
                       ),
                       tags$div(style = "margin-left:20px; margin-bottom:20px",
-                               plotOutput("econ_2_2_1", width = "1000px")),
+                               plotOutput("econ_2_2_1", width = "1000px", height = "800px")),
                       
                       #### Indicator 2.2.2 ----
                       "2.2.2 ",
