@@ -61,7 +61,7 @@ tags$fieldset(
                       tags$a("Proportion of population who self-reported childhood maltreatment (before age 15), by type of maltreatment", href = "https://www150.statcan.gc.ca/t1/tbl1/en/cv%21recreate.action?pid=3510016701&selectedNodeIds=1D11%2c5D1%2c5D2&checkedLevels=0D1%2c1D1%2c2D1%2c2D2%2c2D3%2c3D2&refPeriods=20180101%2c20180101&dimensionLayouts=layout2%2clayout2%2clayout3%2clayout2%2clayout2%2clayout2&vectorDisplay=false"),
                       tags$div(style = "margin-left:20px; margin-bottom:20px",
                                plotOutput("just_4_3_1", width = "100%")),
-                      "4.3.1 Other Relevant BC Data: ",
+                      "4.3.1 Other Relevant B.C. Data: ",
                       tags$a("Ministry of Children and Family Development Reporting Portal", href = "https://mcfd.gov.bc.ca/reporting/services"),
                       " (Data and trends for six service lines) - ",
                       tags$a("Child Protection Services - Four Key Stages, Child Protection Reports Case Data and Trends, Permanency for Children & Youth in Care Case Data and Trends", href = "https://mcfd.gov.bc.ca/reporting/services/child-protection/permanency-for-children-and-youth/case-data-and-trends"),

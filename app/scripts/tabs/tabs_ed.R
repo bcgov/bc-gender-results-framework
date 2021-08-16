@@ -41,9 +41,9 @@ tags$fieldset(
                         tags$li("For STEM related groupings (science, technology, engineering and mathematics and computer sciences), in B.C., of students enrolled in post-secondary, 40.1% are females and 59.9% are males. In Canada, the same is true for 38.3% of females and 61.7% for males."),
                         tags$li("For BHASE related groupings (business, humanities, health, arts, social science and education; non-STEM), in B.C., of students enrolled in post-secondary, 59.9% are females and 40.1% are males. In Canada, the same is true for 61.9% of females and 38.1% for males.")
                       ),
-                      "1.1.2 Other Relevant BC Data: ",
+                      "1.1.2 Other Relevant B.C. Data: ",
                        tags$a("Post-Secondary Data", target = "_blank", href = "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/data-research"),
-                       " (Data collected from past and present BC post-secondary students) - ",
+                       " (Data collected from past and present B.C. post-secondary students) - ",
                        tags$a("Post-Secondary Central Data Warehouse (Gender Report)", target = "_blank", href = "https://www2.gov.bc.ca/assets/gov/education/post-secondary-education/data-research/standard_reports_gender_totals.pdf"),
                        br(), br(),
                                 
@@ -67,9 +67,9 @@ tags$fieldset(
                       #### Indicator 1.2.1 ----
                       "1.2.1 ", tags$a("High school reading and mathematics test scores", target = "_blank", href = "https://data.oecd.org/pisa/mathematics-performance-pisa.htm"), " [Only Canada Data]",
                       br(),br(),
-                      "1.2.1 Other Relevant BC Data: ",
+                      "1.2.1 Other Relevant B.C. Data: ",
                       tags$a("Reporting on Student Success", target = "_blank", href = "https://studentsuccess.gov.bc.ca/"),
-                      "(Data from the BC school system) - ",
+                      "(Data from the B.C. school system) - ",
                       tags$a("Foundation Skills Assessment, Graduation Assessments", target = "_blank", href = "https://studentsuccess.gov.bc.ca/school-district/099/report/fsa"),
                       ),
   

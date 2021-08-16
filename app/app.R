@@ -26,7 +26,7 @@ source("scripts/charts.R")
 # UI demonstrating column layouts
 ui <- function(req) {
   fluidPage(useShinydashboard(),
-    title = "BC Gender Results Framework",
+    title = "Gender Results Framework - B.C. Data",
   theme = "bootstrap.css",
   HTML("<html lang='en'>"),
   
@@ -43,7 +43,7 @@ ui <- function(req) {
                  img(src = "bcstats_logo_rev.png", title = "BC Stats", height = "80px", alt = "BC Stats"),
                  onclick="gtag"
                ),
-               h1("Gender Results Framework - Available BC Data", style="font-weight:400; color:white; margin: 5px 5px 0 18px;")
+               h1("Gender Results Framework - Available B.C. Data", style="font-weight:400; color:white; margin: 5px 5px 0 18px;")
              )
            )
     ),
@@ -55,7 +55,7 @@ ui <- function(req) {
              ## Sidebar Panel ----
              sidebarPanel(width = 2,
                           style = "margin-top:50px",
-                          tags$fieldset("This site presents BC data, where available, to align with the federal government's",
+                          tags$fieldset("This site presents B.C. data, where available, to align with the federal government's",
                                         tags$a(target = "_blank", 
                                                href = 'https://women-gender-equality.canada.ca/en/gender-results-framework/poster-en.pdf', 
                                                "Gender Results Framework."),
@@ -86,12 +86,13 @@ ui <- function(req) {
                                           HTML(" represents Canada's vision for gender equality, highlighting the key issues that matter most.
                                                Under this framework, the federal government has identified six key areas where change is required to advance gender equality."),
                                           br(), br(),
-                                          HTML("Explore these areas (below) to find out more about the Government of Canada's goals, and monitor BC's progress based on the 
-                                               available indicators in these six areas."),
+                                          HTML("Explore these areas (below) to see data available for B.C. that align with the Government of Canada's goals. Each area-related tab presents the indicators
+                                               identified by the Government of Canada. On each tab, expand the indicator of choice by clicking the + symbol to find information, charts and clickable links 
+                                               to B.C. data. To explore links from a variety of areas, see the All links on one page tab."),
                                           br(), br(),
-                                          HTML("The BC data available spans many years and while some of the data may only be from previous years this is the current data available."),
+                                          HTML("The available B.C. data spans many years and while some of the data may only be from previous years this is the current data available."),
                                           br(),br(),
-                                          HTML("Note that this site is in development, watch for changes."),
+                                          HTML("Note that this site is in continuous development, and additional data will be added as it becomes available."),
                                           br(), br()),
                                         fluidRow(#div(style = "width: 80%; margin:0 auto",
                                           div(style = "width: 65%",

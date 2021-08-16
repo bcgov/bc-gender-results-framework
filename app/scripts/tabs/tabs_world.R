@@ -26,7 +26,7 @@ tags$fieldset(
   shinydashboard::box(width = 12,
                       collapsible = TRUE,
                       collapsed = TRUE,
-                      title = "Feminist international approach to all policies and programs, including diplomacy, trade, security and developmentFewer vulnerable individuals living in poverty",
+                      title = "Feminist international approach to all policies and programs, including diplomacy, trade, security and development",
                       
                       #### Possible Indicators ----
                       "6.1 Increased and meaningful participation of women in peace and security efforts [TBD]", 
@@ -43,8 +43,8 @@ tags$fieldset(
                       br(),br(),
                       "6.7 More girls and women access quality education and skills training [TBD]", 
                       br(),br(),
-                     "Other Relevant BC Data: ",
-                      tags$a("BC Population Projections Application", href = ""),
+                     "Other Relevant B.C. Data: ",
+                      tags$a("B.C. Population Projections Application", href = ""),
                       " (Access, customize and download sub-provincial population projection data by age and sex for various administrative areas)"
   )
   
