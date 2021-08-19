@@ -39,7 +39,7 @@ ui <- function(req) {
            tags$header(class="header", style="padding:0 0px 0 0px; display:flex; height:80px;
            width:100%;",
              tags$div(class="banner", style="display:flex; justify-content:flex-start; align-items:center; margin: 0 10px 0 10px",
-               a(href="https://www2.gov.bc.ca/gov/content/data/about-data-management/bc-stats",
+               a(target = "_blank", href="https://www2.gov.bc.ca/gov/content/data/about-data-management/bc-stats",
                  img(src = "bcstats_logo_rev.png", title = "BC Stats", height = "80px", alt = "BC Stats"),
                  onclick="gtag"
                ),
@@ -65,11 +65,19 @@ ui <- function(req) {
                                         br(),br(),
                                         "Questions?",
                                         br(),br(),
-                                        "Contact", tags$a("Brooke Somers,", href = 'mailto:Brooke.Somers@gov.bc.ca?Subject=gender-results-framework'),
+                                        "Contact:",
+                                        br(),br(),
+                                        tags$a("Brooke Somers", href = 'mailto:Brooke.Somers@gov.bc.ca?Subject=gender-results-framework'),
                                         br(), 
                                         "BC Stats",
                                         br(),
                                         "T: 250-387-8811",
+                                        br(), br(),
+                                        tags$a("Stephanie Yurchak", href = 'mailto:Stephanie.Yurchak@gov.bc.ca?Subject=gender-results-framework'),
+                                        br(), 
+                                        "BC Stats",
+                                        br(),
+                                        "T: 250-480-8735",
                                         br(), br())),
            
            ## Main Panel ----
@@ -82,13 +90,13 @@ ui <- function(req) {
                                         tags$fieldset(
                                           style = "margin-top:20px;",
                                           HTML("The Government of Canada's "),
-                                          tags$a("Gender Results Framework", href="https://women-gender-equality.canada.ca/en/gender-results-framework.html"),
+                                          tags$a("Gender Results Framework", target = "_blank", href="https://women-gender-equality.canada.ca/en/gender-results-framework.html"),
                                           HTML(" represents Canada's vision for gender equality, highlighting the key issues that matter most.
                                                Under this framework, the federal government has identified six key areas where change is required to advance gender equality."),
                                           br(), br(),
                                           HTML("Explore these areas (below) to see data available for B.C. that align with the Government of Canada's goals. Each area-related tab presents the indicators
                                                identified by the Government of Canada. On each tab, expand the indicator of choice by clicking the + symbol to find information, charts and clickable links 
-                                               to B.C. data. To explore links from a variety of areas, see the All links on one page tab."),
+                                               to B.C. data. To explore links from a variety of areas, see the All links on one page tab (above)."),
                                           br(), br(),
                                           HTML("The available B.C. data spans many years and while some of the data may only be from previous years this is the current data available."),
                                           br(),br(),
@@ -189,12 +197,12 @@ ui <- function(req) {
            tags$footer(class="footer",
               tags$div(class="container", style="display:flex; justify-content:center; flex-direction:column; text-align:center; height:46px;",
                 tags$ul(style="display:flex; flex-direction:row; flex-wrap:wrap; margin:0; list-style:none; align-items:center; height:100%;",
-                  tags$li(a(href="https://www2.gov.bc.ca/gov/content/home", "Home", style="font-size:1em; font-weight:normal; color:white; padding-left:5px; padding-right:5px; border-right:1px solid #4b5e7e;")),
-                  tags$li(a(href="https://www2.gov.bc.ca/gov/content/home/disclaimer", "Disclaimer", style="font-size:1em; font-weight:normal; color:white; padding-left:5px; padding-right:5px; border-right:1px solid #4b5e7e;")),
-                  tags$li(a(href="https://www2.gov.bc.ca/gov/content/home/privacy", "Privacy", style="font-size:1em; font-weight:normal; color:white; padding-left:5px; padding-right:5px; border-right:1px solid #4b5e7e;")),
-                  tags$li(a(href="https://www2.gov.bc.ca/gov/content/home/accessibility", "Accessibility", style="font-size:1em; font-weight:normal; color:white; padding-left:5px; padding-right:5px; border-right:1px solid #4b5e7e;")),
-                  tags$li(a(href="https://www2.gov.bc.ca/gov/content/home/copyright", "Copyright", style="font-size:1em; font-weight:normal; color:white; padding-left:5px; padding-right:5px; border-right:1px solid #4b5e7e;")),
-                  tags$li(a(href="https://www2.gov.bc.ca/StaticWebResources/static/gov3/html/contact-us.html", "Contact", style="font-size:1em; font-weight:normal; color:white; padding-left:5px; padding-right:5px; border-right:1px solid #4b5e7e;"))
+                  tags$li(a(target = "_blank", href="https://www2.gov.bc.ca/gov/content/home", "Home", style="font-size:1em; font-weight:normal; color:white; padding-left:5px; padding-right:5px; border-right:1px solid #4b5e7e;")),
+                  tags$li(a(target = "_blank", href="https://www2.gov.bc.ca/gov/content/home/disclaimer", "Disclaimer", style="font-size:1em; font-weight:normal; color:white; padding-left:5px; padding-right:5px; border-right:1px solid #4b5e7e;")),
+                  tags$li(a(target = "_blank", href="https://www2.gov.bc.ca/gov/content/home/privacy", "Privacy", style="font-size:1em; font-weight:normal; color:white; padding-left:5px; padding-right:5px; border-right:1px solid #4b5e7e;")),
+                  tags$li(a(target = "_blank", href="https://www2.gov.bc.ca/gov/content/home/accessibility", "Accessibility", style="font-size:1em; font-weight:normal; color:white; padding-left:5px; padding-right:5px; border-right:1px solid #4b5e7e;")),
+                  tags$li(a(target = "_blank", href="https://www2.gov.bc.ca/gov/content/home/copyright", "Copyright", style="font-size:1em; font-weight:normal; color:white; padding-left:5px; padding-right:5px; border-right:1px solid #4b5e7e;")),
+                  tags$li(a(target = "_blank", href="https://www2.gov.bc.ca/StaticWebResources/static/gov3/html/contact-us.html", "Contact", style="font-size:1em; font-weight:normal; color:white; padding-left:5px; padding-right:5px; border-right:1px solid #4b5e7e;"))
                 )
               )
              )

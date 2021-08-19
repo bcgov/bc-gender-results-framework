@@ -44,7 +44,7 @@ tags$fieldset(
                       "6.7 More girls and women access quality education and skills training [TBD]", 
                       br(),br(),
                      "Other Relevant B.C. Data: ",
-                      tags$a("B.C. Population Projections Application", href = ""),
+                      tags$a("B.C. Population Projections Application", target = "_blank", href = "https://bcstats.shinyapps.io/popProjApp/"),
                       " (Access, customize and download sub-provincial population projection data by age and sex for various administrative areas)"
   )
   
