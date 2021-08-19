@@ -175,7 +175,7 @@ ui <- function(req) {
                                 source("scripts/tabs/tabs_just.R")$value
                                 ),
                        tabPanel(value = "pov",
-                                title = "Porverty reduction",
+                                title = "Poverty reduction",
                                 width = 12,
                                 source("scripts/tabs/tabs_pov.R")$value
                                 ),

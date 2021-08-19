@@ -1,7 +1,7 @@
 tags$fieldset(
   style = "margin-top:20px;",
   tags$legend(h2(tags$img(src="justice_nt.png", height = "50px"),
-                 "Gender-Based Violence and Access to Justice")),
+                 "Gender-based violence and access to justice")),
   
   ## Goals ----
   h3(style = "color:#00008b", "Goal"),

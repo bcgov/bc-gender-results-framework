@@ -1,7 +1,7 @@
 tags$fieldset(
   style = "margin-top:20px;",
   tags$legend(h2(tags$img(src="economic_nt.png", height = "50px"),
-                 "Economic Participation and Prosperity")),
+                 "Economic participation and prosperity")),
   
   ## Goals ----
   h3(style = "color:#00008b", "Goal"),
