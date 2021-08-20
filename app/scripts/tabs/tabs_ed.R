@@ -71,6 +71,10 @@ tags$fieldset(
                       tags$a("Reporting on Student Success", target = "_blank", href = "https://studentsuccess.gov.bc.ca/"),
                       "(Data from the B.C. school system) - ",
                       tags$a("Foundation Skills Assessment, Graduation Assessments", target = "_blank", href = "https://studentsuccess.gov.bc.ca/school-district/099/report/fsa"),
+                      br(),br(),
+                      "1.2.1 Other Relevant B.C. Data: ",
+                      tags$a("Study (2018) of the Organisation for Economic Co-operation and Development (OECD) Programme for International Student Assessment (PISA)", target = "_blank", href = "https://www.cmec.ca/Publications/Lists/Publications/Attachments/396/PISA2018_PublicReport_EN.pdf"),
+                      "(Performance of Canadian 15-year-olds in reading, mathematics, and science)"
                       ),
   
   ## Indicator 1.3 ----
