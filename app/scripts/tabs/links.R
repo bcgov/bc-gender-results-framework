@@ -207,7 +207,10 @@ tags$fieldset(
   " (Includes ", tags$a("Housing Data", target = "_blank", href = "https://www.bchousing.org/research-centre/housing-data"),
   tags$a("Research Themes,", target = "_blank", href = "https://www.bchousing.org/research-centre/research-themes"),
   tags$a("Facts & Stats", target = "_blank", href = "https://www.bchousing.org/research-centre/facts-stats"),
-  "and a ", tags$a("Research Library", target = "_blank", href = "https://www.bchousing.org/research-centre/library"), " - ",
+  "and a ", 
+  ## have to use HTML to avoid space between link and )
+  HTML('<a target = "_blank", href = "https://www.bchousing.org/research-centre/library">Research Library</a>) -'),
+  #tags$a("Research Library", target = "_blank", href = "https://www.bchousing.org/research-centre/library"), ") - ",
   tags$a("Homeless Counts", target = "_blank", href = "https://www.bchousing.org/research-centre/housing-data/homeless-counts"),
   br(),br(),
   tags$b("Child and spousal support orders enforced"),
@@ -258,5 +261,15 @@ tags$fieldset(
   "Other Relevant B.C. Data: ",
   tags$a("B.C. Population Projections Application", target = "_blank", href = "https://bcstats.shinyapps.io/popProjApp/"),
   " (Access, customize and download sub-provincial population projection data by age and sex for various administrative areas)",
+  br(),
+  "Other Relevant B.C. Data: ",
+  tags$a("DataBC", target = "_blank", href = "https://www2.gov.bc.ca/gov/content/data/about-data-management/databc"),
+  "(Includes the", tags$a("BC Data Catalogue", target = "_blank", href = "https://catalogue.data.gov.bc.ca/dataset?download_audience=Public"),
+  "which provides the easiest access to government's data holdings as well as applications and web services)",
+  br(),
+  "Other Relevant B.C. Data: ",
+  tags$a("Data Innovation Program", target = "_blank", href = "https://www2.gov.bc.ca/gov/content/data/about-data-management/data-innovation-program"),
+  "(Data integration and analytics program for government analysts and academic researchers which securely links and de-identifies data from multiple ministries and organizations for better understanding of B.C.'s complex issues)",
   br(),br()
+  
 )
