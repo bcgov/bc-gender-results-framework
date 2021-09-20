@@ -32,6 +32,12 @@ tags$fieldset(
                       ),
                       tags$div(style = "margin-left:20px; margin-bottom:20px",
                                plotOutput("ed_1_1_1", width = "100%")),
+                      "1.1.1 Other Relevant B.C. Data: ",
+                      tags$a("Engineers Canada Trends in Engineering Enrolment and Degrees Awarded 2015-2019", target = "_blank", href = "https://engineerscanada.ca/reports/canadian-engineers-for-tomorrow-2019"),
+                      HTML(" (<a target = '_blank', href = 'https://engineerscanada.ca/'>Engineer Canada</a>'s"),
+                      "annual survey of Canada's undergraduate and postgraduate university engineering programs that 
+                      assesses trends in part- and full-time engineering enrolment and degrees awarded over a five-year period)",
+                      br(),br(),
                       
                       #### Indicator 1.1.2 ----
                       "1.1.2 ", tags$a("Proportion of post-secondary students who are women, by field of study and credential type", href= "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3710016302&pickMembers%5b0%5d=1.11&pickMembers%5b1%5d=2.1&pickMembers%5b2%5d=3.1&pickMembers%5b3%5d=5.1&pickMembers%5b4%5d=6.1&cubeTimeFrame.startYear=2018+/+2019&cubeTimeFrame.endYear=2018+/+2019&referencePeriods=20180101%2c20180101"),

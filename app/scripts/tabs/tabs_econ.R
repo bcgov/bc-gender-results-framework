@@ -86,6 +86,13 @@ tags$fieldset(
                       "2.2.3 ", 
                       tags$a("Gender gap in median annual employment income", target = "_blank", href = "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410032401&pickMembers%5b0%5d=1.13&cubeTimeFrame.startYear=2015&cubeTimeFrame.endYear=2019&referencePeriods=20150101%2c20190101"),
                       br(),br(),
+                      "2.2.3 Other Relevant B.C. Data: ",
+                      tags$a("Engineers and Geoscientists BC 2016 Report on Members' Compensation and Benefits", target = "_blank", href = "https://www.egbc.ca/getmedia/4cb4aeec-8894-4dd8-84a8-6366edd7f9e9/APEGBC-Compensation-Survey-2016_WEB_FINAL.pdf.aspx"),
+                      " (Findings of a comprehensive compensation and benefits survey of",
+                      tags$a("Engineers and Geoscientists BC", target = "_blank", href = "https://www.egbc.ca/"),
+                      "members undertaken in May 2016)",
+                      br(),br(),
+                  
                       
                       #### Indicator 2.2.4 ----
                       "2.2.4 ",
@@ -181,10 +188,16 @@ tags$fieldset(
                           including representation of Women, Indigenous Peoples, Persons with Disabilities and members of Visible Minorities)",
                       br(),br(),
                       "2.5.1 Other Relevant B.C. Data: ",
-                      tags$a("B.C. Public Service 2019 Diversity and Inclusion Survey Results", target = "_blank", href = ""),
+                      tags$a("B.C. Public Service 2019 Diversity and Inclusion Survey Results", target = "_blank", href = "https://gww.gov.bc.ca/sites/default/files/article/file/2019/0926/dicorporatereport.pdf"),
                       " (Online survey to measure employee experiences and perceptions about diversity and
                          inclusion in the workplace and to provide a baseline understanding about employee
                          experiences in the B.C. Public Service)",
+                      br(),br(),
+                      "2.5.1 Other Relevant B.C. Data: ",
+                      tags$a("Engineers Canada 2021 National Membership Information", target = "_blank", href = "https://engineerscanada.ca/reports/2021-national-membership-information"),
+                      HTML(" (<a target = '_blank', href = 'https://engineerscanada.ca/'>Engineer Canada</a>'s"),
+                      "report on information from provincial and territorial engineering regulators about their 
+                      membership in order to paint a picture of the engineering profession in Canada)",
                       br(),br()
                       ),
   
