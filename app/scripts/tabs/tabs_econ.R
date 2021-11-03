@@ -183,7 +183,7 @@ tags$fieldset(
                       tags$div(style = "margin-left:20px; margin-bottom:20px",
                                plotOutput("econ_2_5_1", width = "100%")),
                       "2.5.1 Other Relevant B.C. Data: ",
-                      tags$a("Workforce Profiles Report", target = "_blank", href = "https://securesurveys.gov.bc.ca/ERAP/workforce-profiles/#/?Des_Grp=IND&Des_Grp=DIS&Des_Grp=VM&Des_Grp=WOM&Employee_Type=ALL&Ministry_Key=BCPS&Year=2020"),
+                      tags$a("Workforce Profiles Report", target = "_blank", href = "http://securesurveys.gov.bc.ca/ERAP/workforce-profiles"),
                       " (Statistics on the representation of designated equity groups across the B.C. Public Service (BCPS) workforce, 
                           including representation of Women, Indigenous Peoples, Persons with Disabilities and members of Visible Minorities)",
                       br(),br(),

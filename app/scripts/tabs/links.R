@@ -102,7 +102,7 @@ tags$fieldset(
   "2.5.1 ", tags$a("Proportion of occupational group who are women", target = "_blank", href = "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410033502"),
   br(),
   "2.5.1 Other Relevant B.C. Data: ",
-  tags$a("Workforce Profiles Report", target = "_blank", href = "https://securesurveys.gov.bc.ca/ERAP/workforce-profiles/#/?Des_Grp=IND&Des_Grp=DIS&Des_Grp=VM&Des_Grp=WOM&Employee_Type=ALL&Ministry_Key=BCPS&Year=2020"),
+  tags$a("Workforce Profiles Report", target = "_blank", href = "http://securesurveys.gov.bc.ca/ERAP/workforce-profiles"),
   " (Statistics on the representation of designated equity groups across the B.C. Public Service (BCPS) workforce, 
                                    including representation of Women, Indigenous Peoples, Persons with Disabilities and members of Visible Minorities)",
   br(),                                           
