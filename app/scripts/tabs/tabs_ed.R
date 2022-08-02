@@ -14,7 +14,7 @@ tags$fieldset(
   br(),br(),
   
   ## Indicators ----
-  h3(style = "color:#00008b", "Indicators"),
+  h3(style = "color:#00008b", "Objectives & Indicators"),
   ### Indicator 1.1 ----
   shinydashboard::box(width = 12,
                       collapsible = TRUE,
